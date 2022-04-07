@@ -4,8 +4,8 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, "homepage");
+const outputPath = path.join(OUTPUT_DIR, "index.html");
 
 const render = require("./lib/htmlRenderer");
 
@@ -37,7 +37,7 @@ const questionsEmployee = [
 
 
 function manager() {
-    console.log("Let's build your team");
+    console.log("Let's Build your Team Members!");
     inquirer.prompt(questionsEmployee).then(function (data) {
         const manager = new Manager(data.nameManager, data.managerId, data.emailManager, data.officeNumber);
         teamMembers.push(manager);
