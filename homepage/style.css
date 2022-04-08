@@ -1,0 +1,11 @@
+.mb-3 {
+    background-color: lightseagreen;
+}
+.card-header:first-child {
+    background-color: black;
+    COLOR: WHITE;
+}
+.card-body {
+    
+    background-color: cadetblue;
+}
