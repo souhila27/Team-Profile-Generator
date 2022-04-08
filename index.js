@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "homepage");
-const outputPath = path.join(OUTPUT_DIR, "index.html");
+const outputPath = path.join(OUTPUT_DIR, "members.html");
 
 const render = require("./lib/htmlRenderer");
 
@@ -55,7 +55,7 @@ function team() {
             choices: [
                 "Engineer",
                 "Intern",
-                "I don't want to add any more team members"
+                "No more members to add! "
             ]
         }
     ]).then(function (data) {
